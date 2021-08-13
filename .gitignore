@@ -3,4 +3,8 @@
 *.pyc
 __pycache__/
 local_settings.py
+<<<<<<< HEAD
 /static/
+=======
+/static/
+>>>>>>> origin/master

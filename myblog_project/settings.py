@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_8bt4z8h7(+9-zpd82&maddx8j)^4ewe5)ulgtlixh=m&z)l+v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bryanlin16899.pythonanywhere.com']
 
 
 # Application definition
@@ -78,20 +77,19 @@ WSGI_APPLICATION = 'myblog_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangodatabase',
-        'USER': 'Bryanlin16899',
-        'PASSWORD': 'frdvgtecb03',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'bryanlin16899$djangodatabase',
+        'USER': 'bryanlin16899',
+        'PASSWORD': ')#frdvgtecb03',
+        'HOST': 'bryanlin16899.mysql.pythonanywhere-services.com',
+        'TEST': {
+          'NAME': 'bryanlin16899$djangodatabase'
+        },
         'OPTIONS': {
             'charset': 'utf8mb4'
         }
     }
 }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -127,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
