@@ -42,6 +42,10 @@ a {
 
 /* Navigation Bar */
 
+#nav .container-fluid {
+    padding: 0% 15%;
+}
+
 .navbar {
   padding: 0 0 0rem;
 }
