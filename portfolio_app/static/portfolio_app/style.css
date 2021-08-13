@@ -29,12 +29,6 @@ a {
   line-height: 1.5;
 }
 
-/* Containers */
-
-.container-fluid{
-  padding: 4% 15%;
-}
-
 /* Sections */
 
 .colored-section {
@@ -64,7 +58,7 @@ a {
 }
 
 .nav-item {
-  padding: 0 18px;
+  padding: 0 12px;
 }
 
 .nav-link {
@@ -72,14 +66,11 @@ a {
   font-family: "Montserrat-Light";
 }
 
-
-/* Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
+/* Title Section */
+#title .container-fluid{
+  padding: 8% 15%;
 }
 
-/* Title Section */
 
 #title {
   background-color: #7C9473;
@@ -87,28 +78,45 @@ a {
   text-align: left;
 }
 
-#title .container-fluid {
-  padding: 4% 15% 7%;
-}
 
-/* Title Image */
+
+/* Title Image and contact info */
 
 .title-image {
   width: 60%;
-  margin-top: 100px;
-  position: absolute;
-  right: 30%;
+  position: relative;
+  left: 5%;
   border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  max-width: 100rem;
-  max-height: 100rem;
+}
+
+.contact-info{
+    padding: 3% 0% 0% 20%;
 }
 
 /* Blog Section */
+
+.carousel-item{
+    height:800px;
+}
+
+#blogs .container-fluid {
+    padding: 1% 8%;
+}
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th , .table-hover thead tr:hover th{
   background-color: #CBD3C3;
 }
 
+.carousel-indicators li {
+    background-color: #a2ad9e;
+}
+.carousel-indicators .active {
+    background-color: #5c7055;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
 
 /* Resume Section */
 #resume .container-fluid {
